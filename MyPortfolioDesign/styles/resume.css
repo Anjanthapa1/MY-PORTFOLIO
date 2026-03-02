@@ -40,13 +40,13 @@ hr{
     align-items: center;
 }
 .myname{
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 800;
     margin-bottom: 10px;
 }
 .myname span{
     display: block;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
 }
 .container{
@@ -406,4 +406,5 @@ ul li{
     font-weight: 500;
     letter-spacing: 1px;
 }
+
 }
