@@ -1,0 +1,180 @@
+.navbar{
+    margin: 10px;
+    height: 55px;
+    background-color: rgba(249, 247, 247, 0.125);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.portfolio{
+    letter-spacing: 1px;
+    padding-left: 50px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.portfolio a{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    position: relative;
+}
+.portfolio a::after{
+    transition: all 0.7s;
+    content: " ";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    opacity: 0;
+    border-radius: 50%;
+    background-image: linear-gradient(to right,white, rgb(255, 100, 0) 50%,white);
+    box-shadow: 1px 1px 3px black;
+}
+.portfolio a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+.fname{
+    color: rgb(135, 0, 255);
+    text-shadow: 1px 1px 3px black;
+}
+.lname{
+    background: linear-gradient(to right,white);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    color:rgba(9, 9, 9, 0.75);
+}
+.ul{
+    font-weight: 500;
+    color: white;
+    font-size: 1.125rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+.ul li{
+    list-style: none;
+}
+.ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+}
+.ul li a:hover{
+    color: rgb(255, 123, 0);
+    text-shadow: 1px 2px 3px black;
+}
+.ul li a::after{
+     transition: all 0.7s;
+    content: " ";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    opacity: 0;
+    border-radius: 25%;
+    background-image: linear-gradient(to right, rgb(85, 0, 125) 25%,white, rgb(85,0,125) 75%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.ul li a:hover::after{
+     width: 100%;
+    opacity: 1;
+}
+
+/*style for responsive navigation bar */
+
+.close-icon img{
+    padding: 3px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s;
+}
+.close-icon img:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.responsive-nav{
+    padding:5px;
+    background-color: rgba(180, 180, 180, 0.25);
+    backdrop-filter: blur(10px);
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.responsive-nav.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.responsive-ul{
+    margin: 5px;
+    list-style-type: none;
+}
+.responsive-ul li{
+    margin-bottom: 3px;
+    text-align: center;
+}
+.responsive-ul li a{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgb(255, 112, 0);
+    text-decoration: none;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    transition: all 0.25s;
+}
+.responsive-ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.28);
+    border-radius: 5px;
+    color: white;
+}
+.responsive-ul li a:active{
+    background-color: rgba(0, 0, 0, 0.18);
+}
+.open-icon{
+    padding-right: 25px;
+}
+.open-icon img{
+    padding: 3px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s;
+}
+.open-icon img:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}

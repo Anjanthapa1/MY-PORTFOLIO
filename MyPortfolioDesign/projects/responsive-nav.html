@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive navbar</title>
+    <link rel="stylesheet" href="resoponsive.css">
+</head>
+<body>
+    <main>
+    <div class="sidebar">
+    <div class="nav-side-bar">
+        <div class="close-icon"><button onclick="hideSidebar()"><a href="#"><img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button></div>
+        <div class="ul-sidebar">
+            <li><a href="responsive-nav.html">Home</a></li>
+            <li><a href="/project.html">Project</a></li>
+            <li><a href="/project.html">Blogs</a></li>
+            <li><a href="/about.html" target="_blank">About</a></li>
+            <li><a href="/contact.html" target="_blank">Contact</a></li>
+            </div>
+    </div></div>
+
+    <div class="navbar">
+        <div class="portfilo"><a href="responsive-nav.html">Portfolio</a></div>
+        <div class="ul">
+            <li><a href="responsive-nav.html">Home</a></li>
+            <li><a href="/project.html">Project</a></li>
+            <li><a href="/project.html">Blogs</a></li>
+            <li><a href="/about.html" target="_blank">About</a></li>
+            <li><a href="/contact.html" target="_blank">Contact</a></li>
+            </div>
+            <div class="open-icon">
+            <button onclick="showSidebar()"><a href="#"><img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button></div>
+    </div>
+    <p class="intro"><span>Hi! EveryOne.</span><br>I'm a <br>
+        | Web Developer |</p>
+    </main>
+    
+    <div class="footer">
+        <P>footer</p>
+    </div>
+<!--      <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script> -->
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.classList.add('active')
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.classList.remove('active')
+        }
+    </script>
+</body>
+</html>

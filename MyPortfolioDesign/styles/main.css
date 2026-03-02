@@ -1,0 +1,445 @@
+
+.hero-section{
+    grid-area: hero-section;
+    width: 100%;
+    margin-top: 100px;
+    height: auto;
+   
+}
+/* .main{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-auto-rows:auto;
+    grid-template-areas: "hero-section hero-section"
+                         "aboutme-section aboutme-section"
+                         "contact-section contact-section";
+    row-gap: 5px;
+} */
+.content-img-grid{
+    display: grid;
+    grid-template-columns: 1fr 36%;
+    grid-auto-rows:auto;
+    grid-template-areas: "description profile-img";
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+/* responsive main section including herosection, about and contact section */
+
+.description{
+    grid-area: description;
+    margin-top: 75px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+/*     display: grid;
+    grid-template-rows: 400px 100px;
+    grid-template-columns: 800px;
+    grid-template-areas: "description-intro"
+                         "button";
+ */
+}
+.description-intro{
+    padding-left: 60px;
+    grid-area: description-intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.description-intro p{
+    font-family:"Tourney", sans-serif ;
+    text-transform: uppercase;
+    color: white;
+    line-height:50px;
+    font-weight: 600;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    padding-top: 25px;
+ /*    background: linear-gradient( 150deg,rgb(0, 255, 255),rgb(0, 255, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: text-gradient 3s linear infinite;
+}
+@keyframes text-gradient{
+    0%{background-position: 100%;}
+    50%{background-position: 200%;}
+    100%{background-position: 300%;} */
+}
+.description-intro span{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    color: rgb(255, 160, 0);
+}
+
+.description p:hover{
+    transition: all 1s ease;
+    color: rgb(245, 141, 5);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+    font-size: 2.6rem;
+}
+
+.button{
+    grid-area: button;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+.button a, .resume-button button{
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    border:2px inset white;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin:10px 10px 10px 0px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    transition: all 0.25s;
+    cursor: pointer;
+}
+.resume-button button{
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+.button a:hover, .resume-button button:hover{
+    color:black;
+    background-color:rgb(255, 136, 0);
+    border: 2px solid rgb(255,136,0);
+    border-radius: 20px;
+}
+.profile-img{
+    grid-area: profile-img;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: 400px 50px;
+    grid-auto-columns: auto;
+    grid-template-areas: "imagegrid"
+                         "resume-button";
+    position: relative;
+}
+.imagegrid{
+    grid-area: imagegrid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width:350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: all 3s ease;
+}
+.image:hover{
+    filter: saturate(0%) blur(5px);
+    transform: rotate(360deg);
+}
+
+.imagediv{
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index:0;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.imagediv::after , .imagediv::before{
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    content: " ";
+    width: 350px;
+    height: 350px;
+    padding: 7px;
+    background:conic-gradient(from var(--angle),rgba(0, 0, 0, 0.5) 40%, rgb(255, 125, 0));
+     border-radius: 50%;
+    animation: borderEffect 3s linear infinite;
+    z-index: -1;
+}
+.imagediv::before{
+    filter: blur(20px);
+    opacity: 0.5;
+}
+@keyframes borderEffect{
+    0%{--angle:0deg}
+    100%{--angle:360deg}
+}
+.resume-button{
+    grid-area: resume-button;
+    display: flex;
+    justify-content: center;
+}
+/* .resume-button button{
+     font-size: 1.25rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
+    padding: 5px 8px ;
+    cursor: pointer;
+} */
+.resume-button button a{
+    text-decoration: none;
+}
+/* style of about section */
+
+.aboutme-section{
+    /* grid-area: aboutme-section; */
+    background-color: rgba(25, 25, 25, 0.3);
+    height: auto;
+    color: white;
+    padding: 50px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme-div{
+    width: 90%;
+    height: 95%;
+    background-color: rgba(35, 35, 35, 0.5);
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 1px 1px 20px 4px rgba(255, 255, 255, 0.7);
+    animation: myAnimation;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes myAnimation{
+    0%{scale: 0.3; opacity: 0.5;}
+    100%{ scale: 1; opacity: 1;}
+}
+.aboutme-heading{
+    font-weight: 700;
+    color: rgb(135, 0, 255);
+    text-shadow: 1px 2px 3px black;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.75rem;
+}
+.myimage{
+    margin-right: 20px;
+    float: left;
+    shape-outside: circle(49%);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+    border-left: 5px solid rgb(255, 100, 100);
+    border-top: 5px solid rgb(255, 255, 60);
+    border-right: 5px solid rgb(0, 255, 255);
+    border-bottom: 5px solid rgb(0, 255, 0);
+    transition: all 1s ease;
+    position: relative;
+    z-index: 30;
+}
+
+.myimage:hover{
+    transform: scale(1.5) translateX(150px) rotate(360deg);
+    border-radius: 20%;
+     border-top: 5px solid rgb(255, 100, 100);
+    border-right: 5px solid rgb(255, 255, 60);
+    border-bottom: 5px solid rgb(0, 255, 255);
+    border-left: 5px solid rgb(0, 255, 0);
+}
+.myintro{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+.myintro p{
+    animation: textblur both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.aboutme-heading{
+    animation: textblur both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes textblur{
+    0%{filter: blur(15px);}
+    100%{filter: blur(0px);}
+}
+
+/* style of contact- section */
+.contact-section{
+   /*  grid-area: contact-section; */
+    background-color: rgba(25, 25, 25, 0.499);
+    height: auto;
+    color: white;
+    padding: 50px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-div{
+    height: 95%;
+    width: 95%;
+    background-color: rgba(35, 35, 35, 0.5);
+    border-radius: 25px;
+    padding-top: 25px;
+    box-shadow: 1px 1px 20px 4px rgba(255, 255, 255, 0.7);
+    animation: myAnimation;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+    margin-bottom: 25px;
+}
+@keyframes myAnimation{
+    0%{scale: 0.3; opacity: 0.5;}
+    100%{ scale: 1; opacity: 1;}
+}
+.contact-heading{
+    font-weight: 700;
+    color: rgb(135, 0, 255);
+    text-shadow: 1px 2px 3px black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.75rem;
+}
+.about-contact-hrline{
+    border-width: 1px;
+    margin: 25px 50px 25px 50px;
+}
+.mydetail{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+.mydetail a{
+    color: white;
+    text-decoration: none;
+}
+.mydetail img{
+    width: 40px;
+}
+.mydetail label{
+    font-size: 1.5rem;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.social-link a{
+    width:26px;
+    height: 34px;
+    color: black;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 9px 5px 9px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 50px;
+    transition: all 0.25;
+}
+.social-link a:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* .social-link .fa-telegram, .social-link a img{
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 50px;
+} */
+.formdiv{
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+fieldset{
+    border: 1px solid orange;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+::placeholder{
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+label{
+    margin-top: 25px;
+}
+input{
+    width: 80%;
+    height: 32px;
+    display: block;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+#message{
+    padding: 5px;
+    width: 80%;
+    height: 200px;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.Send_Message{
+    font-weight: 700;
+    font-size: 1.125rem;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 50px 3px 50px 3px;
+    border-style: none;
+    color: black;
+    background-color: rgb(255, 100, 0);
+    
+    cursor: pointer;
+    transition:all 0.5s;
+}
+.Send_Message:hover{
+    color: white;
+    background-color: rgb(134, 0, 201);
+}
+

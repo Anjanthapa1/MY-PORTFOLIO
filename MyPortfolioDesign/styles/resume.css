@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1600px;
+    background-color:rgb(25, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.note{
+    font-size: 11px;
+    color: rgb(255, 240, 211);
+    text-align: center;
+    margin-bottom: 25px;
+}
+.resume-section{
+    font-size: 12px;
+    width: 954px;
+    height: 1350px;
+    background-color: white;
+}
+hr{
+    border-color: black;
+    margin-bottom: 10px;
+}
+.heading-section{
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myname{
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.myname span{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-rows: auto;
+}
+.column1{
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resume-profile-div{
+    margin-bottom: 30%;
+}
+.resume-profile{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-top:-50%;
+}
+.contact, .education, .language{
+    font-size: 1rem;
+    width:88%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 40%;
+}
+.contact-heading, .education-heading, .language-heading, .introduction-heading,.hobbies-heading, .skill-heading, .project-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+.call-icon, .email-icon, .location-icon{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    vertical-align: middle;
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+}
+.icon-link{
+    display: flex;
+    justify-content: flex-start;
+} 
+.icon-link a{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.education div, .language div,.hobbies div, .skill div, .project div{
+    padding-left: 25px;
+}
+ul li{
+    line-height: 30px;
+}
+.column2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.introduction, .hobbies, .skill, .project{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 80%;
+    margin:30px;
+    font-size: 1.25rem;
+}
+.intro{
+    line-height: 28px;
+}
+.skill-subtopic{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+@media (max-width:950px) and (max-width:1200px){
+body{
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.resume-section{
+    font-size: 12px;
+    width: 800px;
+    height: 1132px;
+    background-color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-rows: 100%;
+}
+.myname{
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.myname span{
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.resume-profile{
+    width: 160px;
+    height: 160px;
+}
+.contact, .education, .language{
+    font-size: 14px;
+    width:88%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20%;
+}
+.contact-heading, .education-heading, .language-heading, .introduction-heading,.hobbies-heading, .skill-heading, .project-heading{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: left;
+}
+.skill-subtopic{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.introduction, .hobbies, .skill, .project{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 80%;
+    margin:20px;
+    font-size: 1rem;
+}
+.intro{
+    line-height: 25px;
+}
+ul li{
+    line-height: 25px;
+}
+}
+
+
+
+@media (max-width:750px){
+body{
+    padding: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.resume-section{
+    font-size: 12px;
+    width: 100%;
+    height: 849px;
+    background-color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-rows: 100%;
+}
+.myname{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.myname span{
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.resume-profile{
+    width: 130px;
+    height: 130px;
+}
+.call-icon, .email-icon, .location-icon{
+    width: 20px;
+    height: 20px;
+}
+.icon-link a{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.contact, .education, .language{
+    font-size: 0.68rem;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20%;
+}
+.contact-heading, .education-heading, .language-heading, .introduction-heading,.hobbies-heading, .skill-heading, .project-heading{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+.skill-subtopic{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.introduction, .hobbies, .skill, .project{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 80%;
+    margin:15px;
+    font-size: 0.75rem;
+}
+.intro{
+    line-height: 15px;
+}
+ul li{
+    line-height: 15px;
+}
+}
+
+
+
+@media (max-width:500px){
+body{
+    padding: 20px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    background-color:rgb(25, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume-section{
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 3px;
+}
+hr{
+    border-color: black;
+    margin-bottom: 10px;
+}
+.heading-section{
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height:75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myname{
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.myname span{
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.container{
+    display: grid;
+    grid-template-columns:100%;
+    grid-auto-rows: auto;
+    gap: 0;
+}
+.column1,.column2{
+    border-style: none;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    flex-direction: column;
+}
+.resume-profile-div{
+    margin-bottom: 10px;
+}
+.resume-profile{
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.contact, .education, .language{
+    margin-bottom: 25px;
+    font-size: 1rem;
+    width:90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-heading, .education-heading, .language-heading, .introduction-heading,.hobbies-heading, .skill-heading, .project-heading{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.call-icon, .email-icon, .location-icon{
+    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    color: white;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.icon-link{
+    display: flex;
+    justify-content: flex-start;
+} 
+.icon-link a{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+}
+.education div, .language div,.hobbies div, .skill div, .project div{
+    padding-left: 25px;
+}
+ul li{
+    line-height: 20px;
+}
+.introduction, .hobbies, .skill, .project{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 90%;
+    font-size: 1rem;
+}
+.intro{
+    line-height: 20px;
+}
+.skill-subtopic{
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+}

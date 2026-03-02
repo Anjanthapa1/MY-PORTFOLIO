@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    height: 200vh;
+}
+.outerbox{
+    margin: 100px;
+    width: 500px;
+    height: 700px;
+    border: 2px dashed black;
+    position: relative;
+    /*here nested css is used in absolute container relative to outer container*/
+  /*  .absolute{
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+}
+.innerbox{
+    margin: 100px;
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    color: white;
+}
+
+.relative{
+    border: 1px solid black;
+    background-color: #0f0;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    z-index: 1;
+}
+.fixed{
+    border: 1px solid black;
+    background-color: #00f;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.sticky{
+    order: 1px solid black;
+    background-color: #00f;
+    text-align: center;   
+    color: white;
+    position: sticky;
+    top: 0;
+} */
+ html{
+    scroll-behavior: smooth;
+ }
+ body{
+    height: auto;
+    background-image: radial-gradient(black,whitesmoke);
+ }
+ header{
+    position: fixed;
+    top: 10px;
+    left: 10px;/* width:100% is done if no space is needed in left and right*/
+    right: 10px;
+    border-radius: 25px;
+    background-color: rgba(27, 26, 26, 0.488);
+    backdrop-filter: blur(5px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+ }
+ header a{
+    padding: 5px;
+    background-color: orange;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    margin: auto;
+ }
+ button{
+    width: 50px;
+    height: 50px;
+    background-color:orange;
+    position: fixed;
+    top: 300px;
+    z-index: 2;
+ }
+ .container{
+    padding-top: 20px;
+    margin-top: 20px;
+    height: 80vh;
+ }
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    text-transform: uppercase;
+    margin-top: 50px;
+    background-image: linear-gradient(to bottom right, purple,white);
+    height: 50px;
+    color: rgb(255, 106, 0);
+    text-shadow: 2px 2px 5px black;
+}
+.heading{
+    position: sticky;
+    top: 65px;
+
+}
+footer{
+    background-color: black;
+    height: 30vh;
+}
+.paragraph{
+    padding-top: 50px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+footer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+ 

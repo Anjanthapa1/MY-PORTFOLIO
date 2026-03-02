@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    height: auto;
+    background-image: linear-gradient(to bottom right,black 0%, rgb(100, 0, 165) 50%,black 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+hr{
+    border-color: orange;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill-section{
+    padding: 5px 25px 25px 25px;
+    width: 90%;
+    margin: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-bottom:50px ;
+    border-radius: 25px;
+}
+.skill-heading{
+    font-weight: 700;
+    color: rgb(135, 0, 255);
+    text-shadow: 1px 2px 3px black;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 25px;
+}
+.frontend-heading, .backend-heading{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.frontend-heading img, .backend-heading img{
+    vertical-align: middle;
+    width: 26px;
+    background-color: orange;
+    padding:10px;
+    border-radius: 20px;
+    margin-bottom: 4px;
+
+}
+.container{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px,1fr));
+    grid-auto-rows:auto;
+    gap: 15px;
+}
+
+.box{
+    border: 1px solid orange;
+    border-radius: 75px 0px 75px 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    color: orange;
+    position: relative;
+    z-index: 0;
+}
+.topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-div{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+}
+.logo{
+    width:38px;
+    height: 38px;
+}
+.js-logo{
+    border-radius: 25%;
+}
+.heading{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin:25px;
+}
+.html-percentage {
+    color: orange;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.html-percentage ::after{
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    padding: 8px;
+    background-image: conic-gradient(white 80%,black 20%);
+    border-radius: 50%;
+    z-index: -1;
+}
+.css-percentage {
+    color: orange;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.css-percentage ::after{
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    padding: 8px;
+    background-image: conic-gradient(white 85%,black 15%);
+    border-radius: 50%;
+    z-index: -1;
+}
+.js-percentage {
+    color: orange;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.js-percentage ::after{
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    padding: 8px;
+    background-image: conic-gradient(white 25%,black 25%);
+    border-radius: 50%;
+    z-index: -1;
+}
+.react-percentage {
+    color: orange;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+.react-percentage ::after{
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    padding: 8px;
+    background-image: conic-gradient(white 20%,black 20%);
+    border-radius: 50%;
+    z-index: -1;
+}
+.js-heading{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 25px 10px 25px 10px;
+}
+.html-intro{
+    color: white;
+}

@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Roboto font-family embedded form googlefont.com */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+main{
+    height: 100vh;
+    background-image:url(m4h2hhjze8w71.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    font-family: Roboto, sans-serif;
+}
+/* navigation bar of website in full-screen */
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.5));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 99;
+}
+.portfilo{
+    font-size: 20px;
+    min-width: 150px;
+    max-width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+}
+.portfilo a{
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+}
+.ul{    
+    font-size: 18px;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink:0;
+}
+.ul li{
+    display: inline-block;
+}
+li a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.navbar li a:hover{
+    background-color: red;
+}
+/* navigaton open icon when screen is in mobile or tablet view */
+.open-icon img{
+    width: 34px;
+    height: 30px;
+}
+.open-icon button{
+    border-style: none;
+    background-color: transparent;
+    padding:5px 3px 2px 3px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.open-icon button:hover{
+    background-color: rgba(255, 255, 255, 0.182);
+    backdrop-filter: blur(5px);
+}
+/* hiding navigation open-icon in full-screen */
+@media (min-width:900px) {
+    .open-icon{
+        display: none;
+    }
+}
+/* hiding navigation bars and showing open-icon when width of screen is less than 1000 px */
+/* showing open-icon when max-width becomes 1000px */
+
+@media (max-width:900px)
+{
+    .ul{
+        display: none;
+    }
+     .open-icon{
+        display: contents;
+    }
+}
+
+/* side navigation-bar when screen width becomes less than 1000px and toggle using open-icon */
+.sidebar{
+    /* for not smooth transition in sidebar do
+    display:none; */
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(10px);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index:100;
+    /* for not smooth transition below properties are 
+    not written */
+    transform:translateX(1000px);
+    opacity:0;
+    transition:all 0.5s ease;  
+}
+/* for not smooth transition .sidebar.active are
+    not written in here */
+   .sidebar.active{
+    transform:translateX(0);
+    opacity:1;
+   }
+.close-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    display:block;
+    padding: 10px;
+}
+.close-icon img{
+    width: 34px;
+    height: 30px;
+}
+.close-icon button{
+    border-style: none;
+    background-color: transparent;
+    padding: 3px;
+    border-radius: 50%;
+}
+.close-icon button:hover{
+    backdrop-filter: blur(5px);
+    background-color:transparent;
+}
+.ul-sidebar{
+    list-style-type: none;
+    width: 250px;
+   display: flex;
+   flex-direction: column;
+}
+
+.ul-sidebar li{
+    line-height: 15px;
+}
+.ul-sidebar li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s;
+}
+.ul-sidebar li a:hover{
+    backdrop-filter: blur(10px);
+    background-color: rgba(241, 239, 239, 0.438);
+}
+.ul-sidebar li a:active{
+    backdrop-filter: blur(10px);
+    background-color:rgba(159, 158, 158, 0.173) ;
+}
+
+.intro {
+    width: 60%;
+    color:rgb(255, 119, 0);
+    padding-top: 80px;
+    padding-left: 40px;
+    font-size: 32px;
+    text-shadow: 0px 1px white, 1px 0px white, -1px 1px white, 1px -1px white;
+}
+.intro span{
+    color: black;
+    text-shadow: 0px 1px white, 1px 0px white, -1px 1px white, 1px -1px white;
+
+
+}
+.footer{
+    font-size: 32px;
+    text-align: center;
+    height: 10vh;
+    background-color: black;
+    color: white;
+}
+
+

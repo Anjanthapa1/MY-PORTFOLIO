@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: auto;
+    background-image: radial-gradient(whitesmoke, black 80%)/*  linear-gradient(to bottom right,purple,white) */;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding: 75px 25px;
+    position: relative;
+}
+.container{
+    display: grid;
+    grid-template-rows:auto auto auto auto;
+    grid-template-columns:1fr;
+    gap: 25px;
+}
+.box{
+    padding: 5px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+    background-color: rgba(159, 159, 159, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    animation:boxAnimation both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+@keyframes boxAnimation{
+    0%{
+        transform: scale(0.5);
+    }
+    20%{
+        transform: scale(0.7);
+    }
+    30%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(0.9);
+    }
+    80%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
+.heading{
+    color: white;
+    margin: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px black;
+}
+.description{
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 15px;
+}
+button a{
+    text-decoration:none;
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+}
+button{
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(255, 145, 0);
+    transition: all 0.5s;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+.home-return{
+    background-image: conic-gradient(black 10%,white,black 87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+    border: 1px solid white;
+    position: fixed;
+    top: 45%;
+    left: 0;
+}
+.ancher{
+    color: white;
+    text-shadow: 1px 1px black;
+    margin: 0;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 0.5rem;
+}

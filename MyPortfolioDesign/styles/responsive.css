@@ -1,0 +1,191 @@
+/* responsive style for header */
+@media(min-width:950px){
+    .open-icon{
+        display: none;
+    }
+}
+@media (max-width:950px){
+    .ul{
+        display: none;
+    }
+    .open-icon{
+        display: block;
+    }
+}
+
+/* responsive style for hero section */
+
+@media (max-width:1200px){
+    .hero-section{
+        height: auto;
+    }
+    .content-img-grid{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-auto-rows:500px;
+    grid-template-areas: "description profile-img";
+    margin-top: 0px;
+    margin-bottom: 25px;
+    }
+    .description-intro{
+        padding-left: 25px;
+    }
+    .button{
+        padding-left: 15px;
+    }
+}
+@media (max-width:950px){
+    .content-img-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:400px;
+    grid-template-areas: "description "
+                         "profile-img";
+    margin-top: 0px;
+    margin-bottom: 25px;
+    }
+    .hero-section{
+        height: auto;
+        margin-top: 60px;
+    }
+    .description-intro p{
+        font-size: 2.25rem;
+    }
+    .description-intro{
+        padding-left: 20px;
+    }
+    .description p:hover{
+    letter-spacing: 3px;
+    font-size: 2.25rem;
+    }
+    .button{
+        padding-left: 10px;
+    }
+    .button a{
+        font-size: 1rem;
+    }
+    .content-img-grid{
+        margin-bottom: 100px;
+    }
+    .aboutme-section{
+        padding: 40px;
+    }
+    .contact-section{
+        padding: 30px;
+    }
+
+}
+@media (max-width:750px){
+    .description-intro{
+        padding-left: 20px;
+    }
+    .button{
+        padding-left: 10px;
+    }
+    .button a{
+        font-size: 1rem;
+    }
+    .description-intro p{
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .description p:hover{
+    letter-spacing: 3px;
+    font-size: 2rem;
+    }
+   .aboutme-section{
+        padding: 50px 25px 50px 25px;
+    }
+    .contact-section{
+        padding: 50px 20px 50px 20px;
+    }
+}
+
+@media (max-width:500px){
+    .hero-section{
+        height: auto;
+    }
+    .content-img-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:325px;
+    grid-template-areas: "description "
+                         "profile-img";
+    }
+     .description-intro{
+        padding-left: 0px;
+    }
+    .description-intro p{
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .description p:hover{
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    }
+    .button{
+        padding-left: 0px;
+    }
+    .button a{
+    font-size: 1rem;
+    font-weight: 300;
+    }
+
+    .image{
+        width: 300px;
+        height: 300px;
+    }
+    .imagediv{
+        width: 300px;
+        height: 300px;
+    }
+    .imagediv::after , .imagediv::before{
+        width: 300px;
+        height: 300px;
+    }
+     .content-img-grid{
+        margin-bottom: 150px;
+    }
+    .aboutme-section{
+        padding: 50px 15px 50px 15px;
+    }
+    .myimage-div{
+        display: flex;
+        justify-content: center;
+    }
+    .myintro{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .myimage{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        float: none;
+    }
+    .myimage:hover{
+        transform: scale(1.25) rotate(360deg);
+        border-radius: 20%;
+    }
+    .contact-section{
+        padding: 50px 10px 50px 10px;
+    }
+    label{
+        margin-top: 8px;
+    }
+    #message{
+        height: 150px;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    input{
+        width: 90%;
+    }
+    .Send_Message{
+        font-size: 1.rem;
+        padding: 8px;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

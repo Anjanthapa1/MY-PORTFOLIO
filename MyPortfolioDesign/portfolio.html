@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjan's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    
+    <div class="header">
+    <div class="navbar">
+            <div class="portfolio">
+                <a href="portfolio.html"><span class="fname">ANJAN</span> <span class="lname">THAPA</span></a>
+            </div>
+                <div class="ul">
+                <li><a href="portfolio.html">HOME</a></li>
+                <li><a href="#aboutme">ABOUTME</a></li>
+                <li><a href="skill.html" target="_self">SKILL</a></li>
+                <li><a href="project.html">PROJECT</a></li>
+                <li><a href="#contactme">CONTACTME</a></li>
+                </div>
+                <div class="open-icon" onclick="openSidebar()"><img src="images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+    </div>
+        <div class="responsive-nav">       
+            <div class="close-icon" onclick="closeSidebar()"><img src="images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+            <div class="responsive-ul">
+                <li><a href="portfolio.html">HOME</a></li>
+                <li><a href="#aboutme">ABOUTME</a></li>
+                <li><a href="skill.html" target="_self">SKILL</a></li>
+                <li><a href="project.html">PROJECT</a></li>
+                <li><a href="#contactme">CONTACTME</a></li>
+                </div>
+        </div> 
+    </div>
+
+    <div class="main">
+    <div class="hero-section">
+        <div class="content-img-grid">
+        <div class="description">
+            <div class="description-intro">
+            <p>Hi! I'm a <br> Frontend Developer <br>| Turning ideas into clean UI |</p> <br>
+            <span>My Simple and Classic Portfolio. <br> ... ANJAN THAPA ...</span>
+            </div>
+        <div class="button">
+             <a href="skill.html" target="_self" >Skill</a>
+             <a href="project.html">Project</a>
+        </div>
+        </div>
+        <div class="profile-img"><div class="imagegrid"><div class="imagediv"><img src="images/2578.webp" class="image"></div></div>
+        <div class="resume-button">
+        <a href="resume.html" target="_blank"><button>MY RESUME</button></a></div>
+       </div></div>
+    </div><hr>
+    <div class="aboutme-section" id="aboutme">
+        <div class="aboutme-div">
+            <p class="aboutme-heading">| ABOUTME |</p><hr class="about-contact-hrline">
+            <div class="myimage-div"><img src="images/103.jpg" class="myimage"></div>
+        <div class="myintro">
+            <p>Hi! Everyone, I'm ANJAN THAPA.</p><br><br> <p>I'm a student studying BSc.CSIT in Prithvi Narayan Campus, Pokhara. I'm in my 3rd semister currently.
+            I'm a passionate beginner Frontend Developer who recently completed HTML and CSS form beginner to advanced level.</p><br><br>
+            <p>Well, I enjoyed building clean, responsive, and modern user inferfaces that looks good on all devices.
+            Currently, I'm improving my web design skills and thinking. I'm preparing to learn JavaScript to build more interactive web applications.</p>
+            <p>My goal is to become a skilled Full Stack Web Developer and create websites that are both effective and user friendly. This is my portfolio which is mine first project.
+            My dedication take me here today and I'm still growing day-by-day in this platform.</p><br> <br>
+            <p>I'm currently expanding my skills like responsive web design, CSS scroll animation, logical thinking, etc. and working toward becoming a professional Full Stack WEB-DEVELOPER.</p>
+        </div></div>
+    </div><hr>
+    <div class="contact-section" id="contactme">
+        <div class="contact-div">
+            <p class="contact-heading">| CONTACT ME |</p><hr class="about-contact-hrline">
+            <div class="mydetail">
+            <label for="mycontact" class="mycontact">Contact No.</label> <br><img src="images/call_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" class="contact-icon"> <br> +977-9826638778<br><hr class="about-contact-hrline">
+            <label for="myemail" class="myemail">Email </label><br> <img src="images/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" class="mail-icon"> <br><a href="mailto:anjanthapa@348gmail.com">anjanthapa@348gmail.com</a></div><hr class="about-contact-hrline">
+            <div class="social-link">
+            <a href="https://wa.me/9779826638778" target="_blank" class="fa fa-whatsapp"></a>
+            <a href="https://www.linkedin.com/in/anjan-thapa-61265a379?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://t.me/Anjan_thapa8" target="_blank" class="fa fa-telegram"></a>
+            <a href="https://m.me/anjan.thapa.16296" target="_blank"><img src="images/facebook-messenger-brands-solid-full.svg" alt=""></a>
+            </div>
+            <div class="formdiv">
+            <form action=" ">
+                <fieldset>
+                    <legend>CONTACT HERE:</legend>
+                <label for="name" class="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="| name" required>
+                
+                <label for="" class="email">Email:</label>
+                    <input type="email" name="emailid" id="email" placeholder="| email" required>
+                
+                <label for="" class="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="type your message here..."></textarea>
+                <button class="Send_Message">Send Message</button>
+                </fieldset>
+            </form></div>
+        </div>
+    </div>
+    </div><hr>
+
+    <div class="footer">
+        <div class="myname"><a href="portfolio.html" style="text-decoration: none;"><P><span class="fname">ANJAN</span> <span class="lname">THAPA</span></P></a></div>
+         <div class="footer-nav">
+                <li>| <a href="portfolio.html">HOME</a> |</li>
+                <li>| <a href="#aboutme">ABOUTME</a> |</li>
+                <li>| <a href="skill.html" target="_self">SKILL</a> |</li>
+                <li>| <a href="project.html">PROJECT</a> |</li>
+                <li>| <a href="#contactme">CONTACTME</a> |</li>
+                </div> <hr class="hr-line">
+                <p class="footer-description">stay connected with me:</p>
+                <nav class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100072392275380" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/anjan-thapa-61265a379?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/_anjan_thapa?igsh=Mjh2cjZqODd5YmYw" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://wa.me/9779826638778" target="_blank" class="fa fa-whatsapp"></a>
+                <a href="https://t.me/Anjan_thapa8" target="_blank" class="fa fa-telegram"></a>
+                </nav>
+                <br><br>
+                <p class="copyright-tag">Copyright &copy; | ANJAN THAPA |</p>
+    </div>
+</body>
+<script>
+    function openSidebar(){
+        const sidebar = document.querySelector('.responsive-nav')
+        sidebar.classList.add('active')
+    }
+    function closeSidebar(){
+        const sidebar = document.querySelector('.responsive-nav')
+        sidebar.classList.remove('active')
+    }
+</script>
+</html>

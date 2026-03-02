@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(225, 225, 225);
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* youtube header css styles*/
+.header{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    border-bottom:1px solid rgb(231, 228, 228) ;
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.left-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle-section{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.right-section{
+    width: 208px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-shrink: 0;
+    }
+.menu-icon{
+    height: 25px;
+    padding-left: 24px;
+    cursor: pointer;
+
+}
+.youtube-logo{
+    height: 22px;
+    margin-left: 26px;
+    cursor: pointer;
+}
+.searchbar{
+    flex: 1;
+    /* here width = 0; because the searchbar has default width,
+       while shinking page the searchbar stop shink after certain point, this is due to 
+       default width of searchbar So we have to set width:0; . */
+    width: 0;
+    min-width: 0px;
+    max-width: 360px;
+    height: 42px;
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+.searchbar::placeholder{
+    font-size: 16px;
+    padding-left: 12px;
+}
+button{
+    height: 42px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.search-logo-button{
+    width: 65px;
+    margin-left: -1px;
+}
+.voice-logo-button{
+    width: 42px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 20px;
+}
+.search-icon{
+    width: 25px;
+    margin-top: 3px;
+}
+.voice-search-icon{
+    width: 28px;
+    margin-top: 3px;
+}
+.upload-icon{
+    height: 25px;
+}
+.youtube-app-icon{
+    height: 23px;
+}
+.notification-icon{
+    height: 25px;
+}
+.channel-logo{
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+/* css style for navigation sidebar */
+.sidebar{
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    z-index: 100;
+}
+.sidebar{
+    position: fixed;
+    top: 59px;
+    bottom: 0;
+}
+.sidebar button{
+    width: 73px;
+    height: 73px;  
+    border-style: none;  
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: background-color 0.15s;
+}
+.sidebar p{
+    font-size: 10px;
+}
+.home-icon{
+    height: 28px;
+}
+.explore-icon{
+    height: 28px;
+}
+.subscriptions-icon{
+    height: 28px;
+}
+.originals-icon{
+    height: 28px;
+}
+.youtube-music-icon{
+    height: 28px;
+}
+.library-icon{
+    height: 28px;
+}
+.sidebar button:hover{
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+
+main{
+    background-color: rgb(250, 250, 250);
+    margin-top: 65px;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+.video-grid{
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+            grid-auto-rows: auto;
+            gap:  10px 10px;
+            justify-content: center;
+            align-content: flex-start;
+        } 
+        .content-detail1{
+           display: grid;
+           grid-template-columns: 30px 1fr;
+           grid-auto-rows: 1fr;
+           justify-content: center;
+           align-items: flex-start;
+        }
+        .img1a{
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .img11a{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .title1{
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+        
+        .name-details{
+            font-size: 10px;
+            color: rgb(96, 96, 96);
+            cursor: pointer;
+            margin-bottom: 2px;
+        }
+        .details{
+             font-size: 10px;
+            color: rgb(96, 96, 96);
+        }
+
+
+
+@media (max-width:500px){
+    .header{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    border-bottom:1px solid rgb(231, 228, 228) ;
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.left-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle-section{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.right-section{
+    max-width:175px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-shrink: 0;
+    }
+.menu-icon{
+    height: 0px;
+    cursor: pointer;
+}
+.youtube-logo{
+    height: 18px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.searchbar{
+    flex: 1;
+    /* here width = 0; because the searchbar has default width,
+       while shinking page the searchbar stop shink after certain point, this is due to 
+       default width of searchbar So we have to set width:0; . */
+    width: 0;
+    min-width: 0px;
+    max-width: 360px;
+    height: 36px;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+.searchbar::placeholder{
+    font-size: 12px;
+    padding-left: 10px;
+}
+button{
+    height: 36px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.search-logo-button{
+    width: 50px;
+    margin-left: -1px;
+}
+.voice-logo-button{
+    width: 36px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+}
+.search-icon{
+    width: 24px;
+    margin-top: 3px;
+}
+.voice-search-icon{
+    width: 24px;
+    margin-top: 3px;
+}
+.upload-icon{
+    height: 22px;
+}
+.youtube-app-icon{
+    height: 22px;
+}
+.notification-icon{
+    height: 22px;
+}
+.channel-logo{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+/* css style for navigation sidebar */
+.sidebar{
+    border-radius: 5px;
+    background-color:white;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    z-index: 100;
+}
+.sidebar{
+    position: fixed;
+    top: 92%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.sidebar button{
+    width: 40px;
+    height: 40px;  
+    border-style: none;  
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: background-color 0.15s;
+}
+.sidebar p{
+    padding: 2px;
+    font-size: 8px;
+}
+.home-icon{
+    height: 28px;
+}
+.explore-icon{
+    height: 28px;
+}
+.subscriptions-icon{
+    height: 28px;
+}
+.originals-icon{
+    height: 28px;
+}
+.youtube-music-icon{
+    height: 28px;
+}
+.library-icon{
+    height: 28px;
+}
+.sidebar button:hover{
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+main{
+    background-color: rgb(250, 250, 250);
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+}

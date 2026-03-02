@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-image: linear-gradient(to right, purple, white);
+  padding: 20px;
+}
+
+.container{
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+column-gap:5px;
+row-gap:5px;
+}
+.column{
+flex:24%;  /*24% is used because it is nearly equal to 25% which is 1/4 th of 100% width*/
+}
+
+@media(max-width:1000px){
+.column{
+flex:32%;  /*32% is used because it is nearly equal to 33.33% which is 1/3 th of 100% width*/
+}
+}
+@media(max-width:700px){
+.column{
+flex:48%; /*48% is used because it is nearly equal to 50% which is 1/2 th of 100% width*/
+}
+}
+@media(max-width:500px){
+.column{
+flex:100%; /*100% is used because it is equal to 100% which is full width of screen*/
+ }
+} 
+
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Gallery Using FlexBox</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+ <!--  <h1>Here flex is used because in flex can be flexible for both row and column. So, images align perfectly in a specific grid...</h1><br>
+  <h1>Grid is used for align the images that has equal row and column width...So they can align perfectly...</h1> -->
+</div>
+
+<!-- Photo Grid -->
+<div class="container"> 
+<div class="column">
+    <a target="_self" href="w3images/wedding.jpg">
+    <img src="w3images/wedding.jpg" style="width:100%"></a>
+    <a target="_self" href="w3images/rocks.jpg">
+    <img src="w3images/rocks.jpg" style="width:100%"></a>
+    <a href="w3images/falls2.jpg" target="_self">
+    <img src="w3images/falls2.jpg" style="width:100%"></a>
+    <a href="w3images/paris.jpg" target="_self">
+    <img src="w3images/paris.jpg" style="width:100%"></a>
+    <a href="w3images/nature.jpg" target="_self">
+    <img src="w3images/nature.jpg" style="width:100%"></a>
+    <img src="w3images/ocean.jpg" style="width:100%">
+    <img src="w3images/mist.jpg" style="width:100%">
+    <img src="w3images/underwater.jpg" style="width:100%">
+    </div>
+
+    <div class="column">
+    <a target="_self" href="w3images/paris.jpg">
+    <img src="w3images/paris.jpg" style="width:100%"></a>
+    <a href="w3images/underwater.jpg" target="_self">
+    <img src="w3images/underwater.jpg" style="width:100%"></a>
+    <a href="w3images/ocean.jpg" target="_self">
+    <img src="w3images/ocean.jpg" style="width:100%"></a>
+    <a href="w3images/wedding.jpg" target="_self">
+    <img src="w3images/wedding.jpg" style="width:100%"></a>
+    <a href="w3images/mist.jpg" target="_self">
+    <img src="w3images/mist.jpg" style="width:100%"></a>
+    <img src="w3images/rocks.jpg" style="width:100%">
+    <img src="w3images/falls2.jpg" style="width:100%">
+    <img src="w3images/nature.jpg" style="width:100%">
+    </div>
+
+    <div class="column">
+    <a target="_self" href="w3images/underwater.jpg"> 
+    <img src="w3images/underwater.jpg" style="width:100%"></a>
+    <a href="w3images/wedding.jpg" target="_self">
+    <img src="w3images/wedding.jpg" style="width:100%"></a>
+    <a href="w3images/rocks.jpg" target="_self">
+    <img src="w3images/rocks.jpg" style="width:100%"></a>
+    <a href="w3images/falls2.jpg" target="_self">
+    <img src="w3images/falls2.jpg" style="width:100%"></a>
+    <img src="w3images/paris.jpg" style="width:100%">
+    <img src="w3images/nature.jpg" style="width:100%">
+    <img src="w3images/ocean.jpg" style="width:100%">
+    <img src="w3images/mist.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <a target="_self" href="w3images/mist.jpg">
+    <img src="w3images/mist.jpg" style="width:100%"></a>
+    <a href="w3images/paris.jpg" target="_self">
+    <img src="w3images/paris.jpg" style="width:100%"></a>
+    <a href="w3images/underwater.jpg" target="_self">
+    <img src="w3images/underwater.jpg" style="width:100%"></a>
+    <a href="w3images/ocean.jpg" target="_self">
+    <img src="w3images/ocean.jpg" style="width:100%"></a>
+    <img src="w3images/wedding.jpg" style="width:100%">
+    <img src="w3images/falls2.jpg" style="width:100%">
+    <img src="w3images/nature.jpg" style="width:100%">
+    <img src="w3images/rocks.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
+
+

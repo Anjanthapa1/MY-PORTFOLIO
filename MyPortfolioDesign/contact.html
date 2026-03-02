@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactMe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<style>
+    a{
+        text-decoration: none;
+    }
+    a button{
+        padding: 5px;
+        font-weight:700;
+        color: black;
+        background-color: rgb(255, 119, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border-style: none;
+        transition: all 0.5s;
+    }
+    a button:hover{
+        background-color: rgb(156, 0, 228);
+        color: white;
+    }
+</style>
+<body>
+        <div class="contact-section" id="contactme">
+        <div class="contact-div">
+            <p class="contact-heading">| CONTACT ME |</p><hr class="about-contact-hrline">
+            <div class="mydetail">
+            <label for="mycontact" class="mycontact">Contact No.</label> <br><img src="images/call_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" class="contact-icon"> <br> +977-9826638778<br><hr class="about-contact-hrline">
+            <label for="myemail" class="myemail">Email </label><br> <img src="images/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" class="mail-icon"> <br><a href="mailto:anjanthapa@348gmail.com">anjanthapa@348gmail.com</a></div><hr class="about-contact-hrline">
+            <div class="social-link">
+            <a href="https://wa.me/9779826638778" target="_blank" class="fa fa-whatsapp"></a>
+            <a href="https://www.linkedin.com/in/anjan-thapa-61265a379?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://t.me/Anjan_thapa8" target="_blank" class="fa fa-telegram"></a>
+            <a href="https://m.me/anjan.thapa.16296" target="_blank"><img src="images/facebook-messenger-brands-solid-full.svg" alt=""></a>
+            </div>
+            <div class="formdiv">
+            <form action=" ">
+                <fieldset>
+                    <legend>CONTACT HERE:</legend>
+                <label for="name" class="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="| name" required>
+                
+                <label for="" class="email">Email:</label>
+                    <input type="email" name="emailid" id="email" placeholder="| email" required>
+                
+                <label for="" class="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="type your message here..."></textarea>
+                <button class="Send_Message">Send Message</button>
+                </fieldset>
+            </form></div>
+        </div>
+        <a href="portfolio.html"><button>
+            GOTO HOME >></button></a>
+    </div>
+</body>
+</html>

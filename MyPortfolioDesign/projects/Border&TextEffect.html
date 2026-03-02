@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Effect</title>
+</head>
+<style>
+    body{
+        height: auto;
+        background-image: linear-gradient(to bottom right, black,purple);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box{
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(19, 19, 19);
+        color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    @property --angle{
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    .box::after, .box::before{
+        content: " ";
+        width: 195px;
+        height: 195px;
+        border-radius: 20px;
+        background:conic-gradient(from var(--angle), purple , orange ,rgb(0, 213, 255)) ;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+/*         transform: translate(-50%,-50%); is used with top:50%; left:50%; width:100%; height:100%; padding:4px;*/     padding: 5px;
+        animation: borderEffect 3s linear infinite;
+        z-index: -1;
+    }
+    .box::before{
+        filter: blur(15px);
+        opacity: 0.5;
+    }
+   /*  @keyframes borderEffect {
+        0%{transform: rotate(0);}
+        100%{transform: rotate(90deg);}
+    } */
+     @keyframes borderEffect{
+        from{--angle:0deg}
+        to{--angle:360deg}
+     }
+</style>
+<body>
+    <h1>GRDIENT EFFECT</h1>
+    <div class="box">
+        BOX1
+    </div>
+     <div class="box">
+        BOX2
+    </div>
+     <div class="box">
+        BOX3
+    </div>
+
+    <style>
+    h1{
+        text-align: center;
+         margin-top: 100px;
+         font-size: 48px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight: 800;
+         
+         background-image: linear-gradient(150deg, purple, green, red, black);
+        background-clip: text;
+         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: text-animation 2s linear infinite;
+        background-size: 150%;
+    }
+    @keyframes text-animation{
+        0%{
+            background-position: 100%;
+        }
+        to{
+            background-position: 200%;
+        }
+    }
+    h2{
+        display: flex;
+        flex: 1;
+         text-align: center;
+         margin-top: 100px;
+         font-size: 40px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight: 800;
+        background-image: linear-gradient(to right,white);
+        -webkit-background-clip: text;
+        color: rgb(113, 0, 113);
+        -webkit-text-stroke: 3px transparent;
+    }
+</style>
+    
+    <h2>ONLY
+        <br> BORDER <br> WITH <br>TRANSPARENT <br> COLOR</h2>
+</body>
+</html>
